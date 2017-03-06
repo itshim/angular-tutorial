@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { SharedModule } from '../../shared/shared.module';
 
@@ -12,7 +13,8 @@ import { ModelDrivenComponent } from './model-driven/model-driven.component';
   imports: [
     CommonModule,
     FormsRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   declarations: [HomeComponent, TemplateDrivenComponent, ModelDrivenComponent]
 })
